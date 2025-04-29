@@ -1,12 +1,6 @@
-.projects {
-    display: grid;
-    gap: 15px;
-    padding: 3rem;
-}
 .project-card {
-    background:white;
-    padding: 100px;
-    height: 120px;
+    background: white;
+    padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 2px 4px black;
     transition: transform 0.2s;
@@ -17,9 +11,9 @@
 .project-title {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color:palevioletred;
+    color: palevioletred;
 }
 .project-description {
-    color:blue;
+    color: blue;
     font-size: large;
 }
