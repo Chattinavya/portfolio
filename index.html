@@ -9,17 +9,6 @@
   <link rel="stylesheet" href="index.css">
 
   <style>
-    .nav-link{
-      color:black;
-      margin: 10px;
-      font-family: Arial, Helvetica, sans-serif;
-      position: relative;
-    }
-    .nav-link:hover{
-      background-color: #f44336;
-      color:black;
-      padding: 5px 20px;
-    }
     html {
       scroll-behavior: smooth;
       scroll-padding-top: 40px;
@@ -27,10 +16,6 @@
     section {
       min-height: 100vh;
       padding-top: 50px;
-
-    }
-    body {
-      background-color:lightcyan;
 
     }
     .container{
@@ -42,7 +27,7 @@
       background-color: black;
       color: hsl(228, 8%, 95%);
       text-align: center;
-      padding: 2px 0;
+      padding: 4px 0;
     }
     .footer .social-icons a {
       color: white;
@@ -61,7 +46,7 @@
     }
     header {
         color: red;
-        padding: 2rem;
+        padding: 1rem;
         text-align: center;
     }
     #project{
@@ -73,17 +58,19 @@
       background-color: lightcyan;
       flex: 1;
       display: flex;
-      padding-top: 50px;
+      padding-top: 20px;
+      margin-top: -100PX;
       justify-content: center;
       align-items: center;
     }
     #about{
       background-color: lightcyan;
       padding-top: 10px;
+      margin-top: 10px;
     }
     #index{
       background-color: lightcyan;
-      padding-top: 100px;
+      padding-top: 50px;
     }
     #skills{
       background-color: lightcyan;
@@ -108,24 +95,24 @@
 <nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top py-1 ">
   <div class="container-fluid">
     <a class="navbar-brand" href="#index">My Portfolio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button class="navbar-toggler" type="button h-10px" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+        <li class="nav-item mx-2">
           <a class="nav-link " href="#index">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mx-2">
           <a class="nav-link" href="#skills">Certificates</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mx-2">
           <a class="nav-link" href="#project">Projects</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mx-2">
           <a class="nav-link" href="#about">About Us</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mx-2">
           <a class="nav-link" href="#contact">Contact Us</a>
         </li>
       </ul>
@@ -141,7 +128,8 @@
       <div class="col-md-6">
         <h1 class="mb-2">I'M  NAVYA</h1>
         <h4 class="mb-2">Software Developer</h4>
-        <p>Welcome to my personal website. I build beautiful and efficient websites and applications!</p>
+        <marquee width="60%" direction="left" height="100px">
+        <p>Welcome to my personal website. I build beautiful and efficient websites and applications!</p></marquee>
       </div>
 
     </div>
@@ -185,14 +173,15 @@
     </div>
   </div>
 </section>
-<header class="head">
+<header class="head " style="padding: 10px;" >
   <h1>My Projects</h1>
 </header>
-<section id="project" class="bg-$cyan-100 d-flex align-items-center">
+<section id="project" class="bg-$cyan-100 d-flex align-items-center h-200 w-100">
   <div class="row g-4">
     <div class="col-12 col-md-6 col-lg-4">
       <div class="project-card ">
         <div class="project-title">Portfolio Website</div>
+        <img src="Portfolio.png" height="300" width="400">
         <div class="project-description">
           Designed and built a personal portfolio website using HTML, CSS, and JavaScript to showcase my skills and projects.
         </div>
@@ -202,6 +191,7 @@
     <div class="col-12 col-md-6 col-lg-4">
       <div class="project-card ">
         <div class="project-title">Natural Organic Food</div>
+        <img src="Organic-food.png" height="300" width="400">
         <div class="project-description">
           Developed an Android application for designing Natural Organic Food for farmers using Kotlin language.
         </div>
@@ -211,6 +201,7 @@
     <div class="col-12 col-md-6 col-lg-4">
       <div class="project-card h-100">
         <div class="project-title">Health & Hygiene</div>
+        <img src="hygeine.jpg" height="=300" width="400">
         <div class="project-description">
           Built a CSP Project for Health & Hygiene.
         </div>
@@ -220,29 +211,35 @@
 </section>
 
 <section id="about">
-  <header class="head">
-    <h1>About Me</h1>
+    <h1 class="abb">About Me</h1>
 </header>
 
-<section class="about-container bg-$cyan-100 w-100 h-50">
-    <img src="profile.jpg" alt="My Photo" class="img-fluid rounded-circle" style="width: 300px; height: 300px; object-fit: cover;">
-    <div class="about-text">
-        <h2>Hello! I'm Navya</h2>
-        <p>
-            I'm a passionate Computer Science student with a love for programming, building web applications, and solving real-world problems.
-            I enjoy working with technologies like C, C++, Java, Python, and web development tools.
-        </p>
-        <p>
-            I'm always eager to learn new skills and contribute to innovative projects. 
-            Apart from coding, I love reading tech blogs and exploring new software tools.
-        </p>
-    </div>
-</section>
+<section class="about-container bg-$cyan-100">
+  <div class="container mt-5">
+    
+    <div class="row d-flex justify-content-center">
+        
+        <div class="col-md-7">
+            
+            <div class="card p-6 py-5 ">
+                
+                <div class="text-center">
+                    <img src="navi.png" width="100" class="rounded-circle">
+                </div>
+                
+                <div class="text-center mt-3">
+                    <span class="bg-secondary p-1 px-4 rounded text-white">Pro</span>
+                    <h5 class="mt-2 mb-0">Navya Chatti</h5>
+                    <span>Web Designer</span>
+                    
+                    <div class="px-4 mt-2">
+                        <p class="fonts">I'm a passionate Computer Science student with a love for programming, building web applications...
+                    </div>
 </section>
 
 
 <section id="contact" style="height:100vh;" >
-  <div class="container">
+  <div class="container h-100">
     <div class="row justify-content-center ">
       <div class="col-lg-8" >
 
